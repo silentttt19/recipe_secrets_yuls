@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipe Secrets Restaurant | Handed-Down Recipes, Made Fresh Daily</title>
+  <meta name="description" content="Recipe Secrets is a warm, family-run restaurant serving closely guarded heirloom recipes made from seasonal ingredients. Reserve your table tonight.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Recipe Secrets Restaurant">
+  <meta property="og:description" content="Heirloom recipes, seasonal ingredients, a table that feels like home. Reserve tonight.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80">
+  <meta name="theme-color" content="#6d1a2b">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Shared header (keep identical on all pages; only aria-current changes) ===== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">Recipe <span>Secrets</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <nav aria-label="Main">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="specials.html">Specials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav-cta"><a href="reservation.html">Reserve a Table</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <img class="hero__img" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1600&q=80" alt="A beautifully plated dish being served at a candlelit restaurant table" width="1600" height="1067" fetchpriority="high">
+      <div class="container">
+        <span class="eyebrow">Est. 1994 · Family Kitchen</span>
+        <h1>Recipe Secrets</h1>
+        <p>Heirloom recipes, whispered down three generations and cooked fresh for you tonight.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="reservation.html">Reserve a Table</a>
+          <a class="btn btn--ghost" href="specials.html">See Today's Specials</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured dishes -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head fade-in">
+          <span class="eyebrow">From Our Kitchen</span>
+          <h2>Signature Dishes</h2>
+          <p class="lead">Four plates our regulars will never let us take off the menu.</p>
+        </div>
+        <div class="grid grid--4">
+          <article class="card fade-in">
+            <div class="card__img"><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=600&h=450&q=80" alt="Grilled steak served with golden crispy fries and herbs" width="600" height="450" loading="lazy"></div>
+            <div class="card__body"><h3>Secret-Rub Steak Frites</h3><p>28-day aged sirloin with our 11-spice rub and hand-cut herb fries.</p><span class="price">$32</span></div>
+          </article>
+          <article class="card fade-in">
+            <div class="card__img"><img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=600&h=450&q=80" alt="Pan of spaghetti with juicy shrimp and cherry tomatoes" width="600" height="450" loading="lazy"></div>
+            <div class="card__body"><h3>Nonna's Shrimp Spaghetti</h3><p>Garlic, chilli and white wine over slow-simmered tomatoes.</p><span class="price">$26</span></div>
+          </article>
+          <article class="card fade-in">
+            <div class="card__img"><img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=600&h=450&q=80" alt="Seared pork chop topped with caramelised apples and green broccolini" width="600" height="450" loading="lazy"></div>
+            <div class="card__body"><h3>Apple-Glazed Pork Chop</h3><p>Thick-cut, brined overnight and finished with cider caramel.</p><span class="price">$29</span></div>
+          </article>
+          <article class="card fade-in">
+            <div class="card__img"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=600&h=450&q=80" alt="Vanilla panna cotta in glass jars topped with fresh strawberries" width="600" height="450" loading="lazy"></div>
+            <div class="card__body"><h3>Strawberry Panna Cotta</h3><p>Silky vanilla cream with macerated berries and a hint of basil.</p><span class="price">$11</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our story teaser -->
+    <section class="section section--alt">
+      <div class="container split">
+        <div class="split__img fade-in"><img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=900&h=675&q=80" alt="Our head chef carefully finishing a dish in the kitchen" width="900" height="675" loading="lazy"></div>
+        <div class="fade-in">
+          <span class="eyebrow">Our Story</span>
+          <h2>Every recipe has a secret</h2>
+          <p>It began with a worn notebook of grandmother's recipes and a very small kitchen. Thirty years on, we still cook from those same pages, with the same patience and the same one ingredient we'll never tell you about.</p>
+          <a class="btn btn--burgundy" href="about.html">Read Our Story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section-head fade-in">
+          <span class="eyebrow">Kind Words</span>
+          <h2>What Our Guests Say</h2>
+        </div>
+        <div class="testimonials">
+          <blockquote class="quote fade-in" style="margin:0">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>"The best steak I've had in years, and the staff made our anniversary unforgettable."</p>
+            <footer>— Amelia R.</footer>
+          </blockquote>
+          <blockquote class="quote fade-in" style="margin:0">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>"It tastes like my grandmother's kitchen. I've already booked again for next Friday."</p>
+            <footer>— Daniel K.</footer>
+          </blockquote>
+          <blockquote class="quote fade-in" style="margin:0">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>"Warm, welcoming and delicious. The panna cotta alone is worth the trip."</p>
+            <footer>— Priya S.</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Opening hours -->
+    <section class="section">
+      <div class="container fade-in">
+        <!-- TODO: Replace with your real opening hours -->
+        <table class="hours">
+          <caption>Opening Hours</caption>
+          <tbody>
+            <tr><th scope="row">Monday – Thursday</th><td>12:00 – 22:00</td></tr>
+            <tr><th scope="row">Friday – Saturday</th><td>12:00 – 23:30</td></tr>
+            <tr><th scope="row">Sunday (Brunch &amp; Dinner)</th><td>10:00 – 21:00</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section cta-band">
+      <div class="container fade-in">
+        <h2>Your table is waiting</h2>
+        <p class="lead" style="color:var(--cream)">Book in under a minute. We'll take care of the rest.</p>
+        <a class="btn btn--primary" href="reservation.html">Reserve a Table</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Shared footer (keep identical on all pages) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="logo" href="index.html">Recipe <span>Secrets</span></a>
+          <p style="margin-top:.8rem">Heirloom recipes, seasonal ingredients and a table that feels like home.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="specials.html">Specials</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Visit</h3>
+          <!-- TODO: Replace address, phone and email -->
+          <address style="font-style:normal">
+            123 Saffron Lane<br>Springfield, ST 12345<br>
+            <a href="tel:+15555550123">(555) 555-0123</a><br>
+            <a href="mailto:hello@recipesecrets.example">hello@recipesecrets.example</a>
+          </address>
+        </div>
+        <div>
+          <h3>Follow</h3>
+          <!-- TODO: Replace with your real social media links -->
+          <ul>
+            <li><a href="https://instagram.com/" rel="noopener">Instagram</a></li>
+            <li><a href="https://facebook.com/" rel="noopener">Facebook</a></li>
+            <li><a href="https://x.com/" rel="noopener">X / Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; <span data-year>2026</span> Recipe Secrets Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

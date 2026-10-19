@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Specials | Recipe Secrets Restaurant</title>
+  <meta name="description" content="Daily, weekly and seasonal specials at Recipe Secrets, plus the chef's pick of the week. Fresh, limited and gone when they're gone.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Specials at Recipe Secrets Restaurant">
+  <meta property="og:description" content="Daily, weekly and seasonal specials, plus the chef's pick.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80">
+  <meta name="theme-color" content="#6d1a2b">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===== Shared header (keep identical on all pages; only aria-current changes) ===== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">Recipe <span>Secrets</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <nav aria-label="Main">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="specials.html" aria-current="page">Specials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="nav-cta"><a href="reservation.html">Reserve a Table</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <img class="page-hero__img" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80" alt="A table spread with several colourful freshly cooked dishes" width="1600" height="1067" fetchpriority="high">
+      <div class="container">
+        <span class="eyebrow">Fresh &amp; Limited</span>
+        <h1>Today's Specials</h1>
+        <p>Daily, weekly and seasonal plates. When they're gone, they're gone.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+
+        <!-- Chef's Pick -->
+        <div class="chef-pick fade-in">
+          <div class="chef-pick__img"><img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=1000&h=650&q=80" alt="Seared pork chop topped with caramelised apples and green vegetables" width="1000" height="650" loading="lazy"></div>
+          <div class="chef-pick__body">
+            <span class="eyebrow">Chef's Pick · This Week</span>
+            <h2>Apple-Cider Pork Chop</h2>
+            <p>Marco's favourite this autumn: a thick-cut chop brined for 24 hours, seared in brown butter and finished with orchard apples and a cider glaze. Served with charred broccolini.</p>
+            <span class="price">$29</span>
+            <p style="margin-top:1.2rem"><a class="btn btn--primary" href="reservation.html">Reserve &amp; Taste It</a></p>
+          </div>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters" role="group" aria-label="Filter specials">
+          <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" data-filter="daily" aria-pressed="false">Daily</button>
+          <button class="filter-btn" type="button" data-filter="weekly" aria-pressed="false">Weekly</button>
+          <button class="filter-btn" type="button" data-filter="seasonal" aria-pressed="false">Seasonal</button>
+        </div>
+
+        <!-- TODO: Update dishes and prices to match your real specials -->
+        <div class="grid grid--3">
+          <article class="card fade-in" data-category="daily">
+            <div class="card__img"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=600&h=450&q=80" alt="Tagliatelle pasta with slow-cooked beef ragu in a skillet" width="600" height="450" loading="lazy"></div>
+            <div class="card__body"><span class="tag">Daily</span><div class="card__meta"><h3>Beef Ragu Tagliatelle</h3><span class="price">$24</span></div><p>Fresh egg pasta tossed in an eight-hour beef and red wine ragu.</p></div>
+          </article>
+          <article class="card fade-in" data-category="daily">
+            <div class="card__img"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&h=450&q=80" alt="Colourful salmon poke bowl with egg, tomato, corn and greens" width="600" height="450" loading="lazy"></div>
+            <div class="card__body"><span class="tag">Daily</span><div class="card__meta"><h3>Citrus Salmon Bowl</h3><span class="price">$19</span></div><p>Seared salmon, soft egg, sweetcorn and crisp greens with yuzu dressing.</p></div>
+          </article>
+          <article class="card fade-in" data-category="weekly">
+            <div class="card__img"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&h=450&q=80" alt="Sticky glazed barbecue ribs on a wooden board with tomatoes and pickles" width="600" height="450" loading="lazy"></div>
+            <div class="card__body"><span class="tag">Weekly · Thu–Sat</span><div class="card__meta"><h3>Slow-Smoked Ribs</h3><span class="price">$27</span></div><p>Twelve hours low and slow, glazed with our secret smoky-sweet sauce.</p></div>
+          </article>
+          <article class="card fade-in" data-category="weekly">
+            <div class="card__img"><img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=600&h=450&q=80" alt="Salmon and avocado sushi rolls with chopsticks on a wooden board" width="600" height="450" loading="lazy"></div>
+            <div class="card__body"><span class="tag">Weekly · Wed</span><div class="card__meta"><h3>Sushi Night Platter</h3><span class="price">$31</span></div><p>Twelve hand-rolled pieces: salmon, avocado and sesame, with pickled ginger.</p></div>
+          </article>
+          <article class="card fade-in" data-category="seasonal">
+            <div class="card__img"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&h=450&q=80" alt="Wood-fired pizza topped with melted cheese, red onion and fresh herbs" width="600" height="450" loading="lazy"></div>
+            <div class="card__body"><span class="tag">Seasonal · Autumn</span><div class="card__meta"><h3>Harvest Wood-Fired Pizza</h3><span class="price">$21</span></div><p>Roasted squash, caramelised onion, sage and smoked mozzarella.</p></div>
+          </article>
+          <article class="card fade-in" data-category="seasonal">
+            <div class="card__img"><img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=600&h=450&q=80" alt="Stack of fluffy pancakes drizzled with golden syrup and topped with banana" width="600" height="450" loading="lazy"></div>
+            <div class="card__body"><span class="tag">Seasonal · Sunday Brunch</span><div class="card__meta"><h3>Maple Banana Pancakes</h3><span class="price">$14</span></div><p>Buttermilk stack with caramelised banana, warm maple and whipped cream.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-band">
+      <div class="container fade-in">
+        <h2>Don't miss out</h2>
+        <p class="lead" style="color:var(--cream)">Specials sell out fast. Reserve your table now.</p>
+        <a class="btn btn--primary" href="reservation.html">Reserve a Table</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Shared footer (keep identical on all pages) ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="logo" href="index.html">Recipe <span>Secrets</span></a>
+          <p style="margin-top:.8rem">Heirloom recipes, seasonal ingredients and a table that feels like home.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="specials.html">Specials</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Visit</h3>
+          <!-- TODO: Replace address, phone and email -->
+          <address style="font-style:normal">
+            123 Saffron Lane<br>Springfield, ST 12345<br>
+            <a href="tel:+15555550123">(555) 555-0123</a><br>
+            <a href="mailto:hello@recipesecrets.example">hello@recipesecrets.example</a>
+          </address>
+        </div>
+        <div>
+          <h3>Follow</h3>
+          <!-- TODO: Replace with your real social media links -->
+          <ul>
+            <li><a href="https://instagram.com/" rel="noopener">Instagram</a></li>
+            <li><a href="https://facebook.com/" rel="noopener">Facebook</a></li>
+            <li><a href="https://x.com/" rel="noopener">X / Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-bottom">&copy; <span data-year>2026</span> Recipe Secrets Restaurant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

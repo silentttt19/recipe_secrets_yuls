@@ -1,0 +1,9 @@
+﻿# OS / editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node (not used by the site, but keeps stray installs out of the repo)
+node_modules/
+package-lock.json
