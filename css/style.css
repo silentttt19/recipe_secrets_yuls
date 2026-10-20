@@ -108,8 +108,8 @@ a:hover { color: var(--terracotta); }
   font-family: var(--font-head); font-size: 1.45rem; font-weight: 700;
   color: var(--white); text-decoration: none; letter-spacing: .02em;
 }
-.logo, .logo span { color: var(--yellow); }
-.logo:hover, .logo:hover span { color: var(--white); }
+.logo span { color: var(--gold); }
+.logo:hover { color: var(--white); }
 
 .nav-toggle {
   display: inline-flex; flex-direction: column; justify-content: center; gap: 5px;
