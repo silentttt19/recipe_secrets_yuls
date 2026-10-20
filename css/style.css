@@ -11,6 +11,7 @@
   --burgundy-dark: #45101c;
   --terracotta: #b4532a;
   --gold: #d9a441;
+  --yellow: #ffd60a;         /* brand title / logo */
   --gold-dark: #8a5d0f;      /* gold text on light backgrounds (AA contrast) */
   --cream: #faf3e8;
   --cream-dark: #f0e4d0;
@@ -107,8 +108,8 @@ a:hover { color: var(--terracotta); }
   font-family: var(--font-head); font-size: 1.45rem; font-weight: 700;
   color: var(--white); text-decoration: none; letter-spacing: .02em;
 }
-.logo span { color: var(--gold); }
-.logo:hover { color: var(--white); }
+.logo, .logo span { color: var(--yellow); }
+.logo:hover, .logo:hover span { color: var(--white); }
 
 .nav-toggle {
   display: inline-flex; flex-direction: column; justify-content: center; gap: 5px;
@@ -156,6 +157,7 @@ a:hover { color: var(--terracotta); }
   background: linear-gradient(180deg, rgba(40,8,16,.65) 0%, rgba(40,8,16,.55) 50%, rgba(40,8,16,.8) 100%);
 }
 .hero h1, .page-hero h1 { color: var(--white); text-shadow: 0 2px 18px rgba(0,0,0,.4); }
+.hero h1 { color: var(--yellow); }   /* home page title "Recipe Secrets" */
 .hero p, .page-hero p { font-size: clamp(1.05rem, 2.5vw, 1.35rem); max-width: 640px; margin-inline: auto; }
 .hero .eyebrow, .page-hero .eyebrow { color: var(--gold); }
 .hero__actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.8rem; }
