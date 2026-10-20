@@ -157,7 +157,7 @@ a:hover { color: var(--terracotta); }
   background: linear-gradient(180deg, rgba(40,8,16,.65) 0%, rgba(40,8,16,.55) 50%, rgba(40,8,16,.8) 100%);
 }
 .hero h1, .page-hero h1 { color: var(--white); text-shadow: 0 2px 18px rgba(0,0,0,.4); }
-.hero h1 { color: var(--yellow); }   /* home page title "Recipe Secrets" */
+.hero h1 { color: var(--yellow); font-size: clamp(2.6rem, 9vw, 6.5rem); }   /* home page title "Recipe Secrets" */
 .hero p, .page-hero p { font-size: clamp(1.05rem, 2.5vw, 1.35rem); max-width: 640px; margin-inline: auto; }
 .hero .eyebrow, .page-hero .eyebrow { color: var(--gold); }
 .hero__actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.8rem; }
